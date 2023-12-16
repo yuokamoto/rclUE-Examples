@@ -8,4 +8,4 @@ fi
 GENERATOR_COMMAND="${UE5_DIR}/Engine/Build/BatchFiles/Linux/GenerateProjectFiles.sh"
 
 
-(exec "$GENERATOR_COMMAND" -project="${PWD}/rclUE_examples.uproject" -game)
+(exec "$GENERATOR_COMMAND" -project="${PWD}/rclUEExamples.uproject" -game)

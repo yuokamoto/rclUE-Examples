@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class rclUE_examplesTarget : TargetRules
+public class rclUEExamplesTarget : TargetRules
 {
-	public rclUE_examplesTarget( TargetInfo Target) : base(Target)
+	public rclUEExamplesTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
-		ExtraModuleNames.AddRange( new string[] { "rclUE_examples" } );
+		ExtraModuleNames.AddRange( new string[] { "rclUEExamples" } );
 	}
 }

@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class rclUE_examplesServerTarget : TargetRules
+public class rclUEExamplesEditorTarget : TargetRules
 {
-	public rclUE_examplesServerTarget( TargetInfo Target) : base(Target)
+	public rclUEExamplesEditorTarget( TargetInfo Target) : base(Target)
 	{
-		Type = TargetType.Server;
+		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
-		ExtraModuleNames.AddRange( new string[] { "rclUE_examples" } );
+		ExtraModuleNames.AddRange( new string[] { "rclUEExamples" } );
 	}
 }

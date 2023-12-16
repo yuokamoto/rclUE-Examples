@@ -75,5 +75,5 @@ Config/DefaultEngine.ini
 
 # External test python cache, pyc
 ExternalTest/TB3_TESTS
-ExternalTest/rclUE_examples_tests/rclUE_examples_tests/__pycache__
-ExternalTest/rclUE_examples_tests/maps
+ExternalTest/rclUEExamples_tests/rclUEExamples_tests/__pycache__
+ExternalTest/rclUEExamples_tests/maps

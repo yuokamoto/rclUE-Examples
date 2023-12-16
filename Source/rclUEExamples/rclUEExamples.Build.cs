@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class rclUE_examples : ModuleRules
+public class rclUEExamples : ModuleRules
 {
-    public rclUE_examples(ReadOnlyTargetRules Target) : base(Target)
+    public rclUEExamples(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         CppStandard = CppStandardVersion.Cpp17;

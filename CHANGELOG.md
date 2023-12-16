@@ -1,4 +1,4 @@
-# Changelog for rclUE-Examples repository
+# Changelog for rclUEExamples repository
 
 ## 0.0.5 ##
 * Enable cpp17 + ExternalTest fastdds

@@ -16,5 +16,5 @@ else
 	ARCHIVE_DIR_REF="-archivedirectory=${ARCHIVE_DIR}"
 fi
 
-(exec "$GENERATOR_COMMAND" BuildCookRun -project="${PWD}/rclUE_examples.uproject" -nop4 -build -cook -compressed -stage -platform=Linux -clientconfig=Development -pak -archive ${ARCHIVE_DIR_REF} -utf8output)
+(exec "$GENERATOR_COMMAND" BuildCookRun -project="${PWD}/rclUEExamples.uproject" -nop4 -build -cook -compressed -stage -platform=Linux -clientconfig=Development -pak -archive ${ARCHIVE_DIR_REF} -utf8output)
 

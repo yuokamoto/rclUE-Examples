@@ -16,4 +16,4 @@ TB3_UE_DIR=${1:-"${CURRENT_DIR}"}
 source ${TB3_UE_DIR}/fastdds_setup.sh
 
 UE_EDITOR="${UE5_DIR}/UnrealEngine/Engine/Binaries/Linux/UnrealEditor"
-(exec "$UE_EDITOR" "${TB3_UE_DIR}/rclUE_examples.uproject" "-game")
+(exec "$UE_EDITOR" "${TB3_UE_DIR}/rclUEExamples.uproject" "-game")

@@ -29,19 +29,19 @@ UE Project which includes examples to use rclUE.
 * please check [Getting Started](https://rapyutasimulationplugins.readthedocs.io/en/doc_update/getting_started.html) as well.
 
 1.  Download UE5.1 for Linux by following [Unreal Engine for Linux](https://www.unrealengine.com/en-US/linux)
-2.  Clone this repo : `git clone --recurse-submodules git@github.com:rapyuta-robotics/rclUE-Examples.git`
+2.  Clone this repo : `git clone --recurse-submodules git@github.com:rapyuta-robotics/rclUEExamples.git`
 3.  Retrieve the large files : `git-lfs pull && git submodule foreach git-lfs pull`
 4.  Build and run
     ```
-    cd rclUE-Examples
+    cd rclUEExamples
     export UE5_DIR=<path to UE5>
     ./update_project_files.sh
-    make rclUE_examplesEditor
+    make rclUEExamplesEditor
     ./run_editor.sh <false or true to use dds server or not> $(pwd) <ue_exe>
     ```
 \* Since the prooject is set to use 
 [ROS2 with Discovery Server](https://docs.ros.org/en/humble/Tutorials/Advanced/Discovery-Server/Discovery-Server.html)
-to communicate with ROS2 Node in UE, you needs to execute `source rclUE_examples_UE/fastdds_setup.sh`. You can run without server by `./run_editor.sh false`
+to communicate with ROS2 Node in UE, you needs to execute `source rclUEExamples_UE/fastdds_setup.sh`. You can run without server by `./run_editor.sh false`
 
 
 ## Install pre-commit
@@ -66,9 +66,9 @@ this will setup pre-commit to all submodules as well.
 
 ### Run
 
-1. Play rclUE-Examples
-2. `cd rclUE-Examples && source fastdds_setup.sh` #if you use ROS2 Discovery Server. You don't need this if you start editor with `./run_editor false`.
-3. `ros2 launch nav2_bringup tb3_simulation_launch.py use_simulator:=False map:=<path to rclUE-Examples>/Content/Turtlebot3_benchmark.yaml `
+1. Play rclUEExamples
+2. `cd rclUEExamples && source fastdds_setup.sh` #if you use ROS2 Discovery Server. You don't need this if you start editor with `./run_editor false`.
+3. `ros2 launch nav2_bringup tb3_simulation_launch.py use_simulator:=False map:=<path to rclUEExamples>/Content/Turtlebot3_benchmark.yaml `
 
 ### Tests
 !NOTE: The test script is setup to run with fastdds, which requires UE to start before ROS is enabled, thus `/opt/ros/<ros_distro>/setup.bash`, which is already run in the script, needs to be not added to `~/.bashrc`

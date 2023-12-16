@@ -4,4 +4,4 @@
 
 #include "CoreMinimal.h"
 
-DECLARE_LOG_CATEGORY_EXTERN(LogTurtlebot3, Log, All);
+DECLARE_LOG_CATEGORY_EXTERN(LogrclUEExamples, Log, All);
