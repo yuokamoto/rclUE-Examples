@@ -4,3 +4,6 @@
 [submodule "Plugins/RapyutaSimulationPlugins"]
 	path = Plugins/RapyutaSimulationPlugins
 	url = https://github.com/rapyuta-robotics/RapyutaSimulationPlugins.git
+[submodule "Plugins/ROSAssets"]
+	path = Plugins/ROSAssets
+	url = git@github.com:yuokamoto/UEROSAssets.git
