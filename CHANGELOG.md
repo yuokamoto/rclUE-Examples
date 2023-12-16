@@ -1,4 +1,4 @@
-# Changelog for turtlebot3-UE repository
+# Changelog for rclUE-Examples repository
 
 ## 0.0.5 ##
 * Enable cpp17 + ExternalTest fastdds

@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class turtlebot3EditorTarget : TargetRules
+public class rclUE_examplesEditorTarget : TargetRules
 {
-	public turtlebot3EditorTarget( TargetInfo Target) : base(Target)
+	public rclUE_examplesEditorTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Editor;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
-		ExtraModuleNames.AddRange( new string[] { "turtlebot3" } );
+		ExtraModuleNames.AddRange( new string[] { "rclUE_examples" } );
 	}
 }

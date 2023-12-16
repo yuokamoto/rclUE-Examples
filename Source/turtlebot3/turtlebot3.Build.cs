@@ -2,9 +2,9 @@
 
 using UnrealBuildTool;
 
-public class turtlebot3 : ModuleRules
+public class rclUE_examples : ModuleRules
 {
-    public turtlebot3(ReadOnlyTargetRules Target) : base(Target)
+    public rclUE_examples(ReadOnlyTargetRules Target) : base(Target)
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         CppStandard = CppStandardVersion.Cpp17;

@@ -26,4 +26,4 @@ sed -i -e 's/${FIXED_FRAME_RATE}/'${DEFAULT_RATE}'/g' Config/DefaultEngine.ini
 sed -i -e 's/${TARGET_RTF}/'${DEFAULT_RTF}'/g' Config/DefaultEngine.ini
 
 UE_EDITOR="${UE5_DIR}/Engine/Binaries/Linux/UnrealEditor"
-(exec "$UE_EDITOR" "${TB3_UE_DIR}/turtlebot3.uproject")
+(exec "$UE_EDITOR" "${TB3_UE_DIR}/rclUE_examples.uproject")

@@ -3,13 +3,13 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class turtlebot3Target : TargetRules
+public class rclUE_examplesTarget : TargetRules
 {
-	public turtlebot3Target( TargetInfo Target) : base(Target)
+	public rclUE_examplesTarget( TargetInfo Target) : base(Target)
 	{
 		Type = TargetType.Game;
 		DefaultBuildSettings = BuildSettingsVersion.V2;
 		IncludeOrderVersion = EngineIncludeOrderVersion.Latest;
-		ExtraModuleNames.AddRange( new string[] { "turtlebot3" } );
+		ExtraModuleNames.AddRange( new string[] { "rclUE_examples" } );
 	}
 }
