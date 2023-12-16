@@ -24,6 +24,10 @@
 			"Enabled": true
 		},
 		{
+			"Name": "ROSAssets",
+			"Enabled": true
+		},
+		{
 			"Name": "PixelStreaming",
 			"Enabled": true
 		}
