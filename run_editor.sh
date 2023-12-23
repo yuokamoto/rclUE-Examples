@@ -6,7 +6,7 @@ if [ -z "${UE5_DIR}" ]; then
         exit 1
 fi
 
-DISCOVERY_SERVER=${1:-true}
+DISCOVERY_SERVER=${1:-false}
 CURRENT_DIR=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)
 TB3_UE_DIR=${2:-"${CURRENT_DIR}"}
 if $DISCOVERY_SERVER; then
@@ -18,7 +18,7 @@ if $DISCOVERY_SERVER; then
 fi
 
 #change default level, generating DefautlEngine.ini
-DEFAULT_LEVEL=${LEVEL_NAME:-"Turtlebot3_benchmark"}
+DEFAULT_LEVEL=${LEVEL_NAME:-"Default"}
 DEFAULT_RATE=${FIXED_FRAME_RATE:-"100.0"}
 DEFAULT_RTF=${TARGET_RTF:-"1.0"}
 sed -e 's/${LEVEL_NAME}/'${DEFAULT_LEVEL}'/g' Config/DefaultEngineBase.ini > Config/DefaultEngine.ini
