@@ -77,3 +77,8 @@ Config/DefaultEngine.ini
 ExternalTest/TB3_TESTS
 ExternalTest/rclUEExamples_tests/rclUEExamples_tests/__pycache__
 ExternalTest/rclUEExamples_tests/maps
+
+# Contents pack which can't be pushed
+Content/Characters
+Content/ThirdPerson
+Content/LevelPrototyping

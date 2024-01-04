@@ -23,7 +23,7 @@ UE Project which includes examples to use rclUE.
     ```
     cd rclUEExamples
     export UE5_DIR=<path to UE5>
-    ./update_project_files.sh
+    ./update_project_files.sh //this is only required first time.
     make rclUEExamplesEditor
     ./run_editor.sh 
     ```
