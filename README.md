@@ -16,7 +16,7 @@ UE Project which includes examples to use rclUE.
 - Warehouse: Example map of warehouse composed oof contesnts in Epic Marketplace
 
 ## Dependency
-Some example maps uses assets from Epic MarketPlace. Sicne those can not be included in github repository even if it is free, you need to follow steps to download plugins.
+Some example maps uses assets from Epic MarketPlace. Sicne those can not be included in github repository even if it is free, you need to download followings under Contents folder
  - [Factory Environment Collection
 ](https://www.unrealengine.com/marketplace/en-US/product/factory-environment-collection?sessionInvalidated=true): Warehouse map and forklift models are comes from here.
  - [Vehicle Variety Pack
