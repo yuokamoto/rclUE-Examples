@@ -12,6 +12,18 @@ UE Project which includes examples to use rclUE.
 ## Maps
 - Default: empty map.
 - MeshExamples: Example map to show StaticMeshes
+- Character: Examplme map to test character navigation
+- Warehouse: Example map of warehouse composed oof contesnts in Epic Marketplace
+
+## Dependency
+Some example maps uses assets from Epic MarketPlace. Sicne those can not be included in github repository even if it is free, you need to download followings under Contents folder
+ - [Factory Environment Collection
+](https://www.unrealengine.com/marketplace/en-US/product/factory-environment-collection?sessionInvalidated=true): Warehouse map and forklift models are comes from here.
+ - [Vehicle Variety Pack
+](https://www.unrealengine.com/marketplace/en-US/product/bbcb90a03f844edbb20c8b89ee16ea32): Track models are comes from here
+ - [Mannequins Pack](https://www.unrealengine.com/marketplace/en-US/product/mannequins-asset-pack)
+
+*you can use [lutris](https://lutris.net/) to use Epic launcher in Ubuntu.
 
 ## Setup and run
 * please check [Getting Started](https://rapyutasimulationplugins.readthedocs.io/en/doc_update/getting_started.html) as well.
