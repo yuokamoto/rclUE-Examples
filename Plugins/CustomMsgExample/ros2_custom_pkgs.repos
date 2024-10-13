@@ -1,0 +1,13 @@
+repositories:
+  navigation2:
+    type: git
+    url: https://github.com/ros-planning/navigation2.git
+    version: humble
+  rclUE_client_example:
+    type: git
+    url: https://github.com/yuokamoto/rclUE_client_example.git
+    version: custom_msgs
+  UE_msgs: # non standard msg dependency
+    type: git
+    url: https://github.com/rapyuta-robotics/UE_msgs.git
+    version: devel
