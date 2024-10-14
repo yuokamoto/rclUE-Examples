@@ -83,6 +83,7 @@ public class CustomMsgExample : ModuleRules
 		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "PhysicsCore", "AIModule", "NavigationSystem", "Json", "Projects",
                                                             "Chaos", "ChaosVehicles", "ChaosVehiclesCore", "ChaosVehiclesEngine",
                                                             "rclUE"});
+        PrivateDependencyModuleNames.AddRange(new string[] { });
 	}
 }
  

@@ -26,10 +26,6 @@
 	 {
 	   "Name": "rclUE",
 	   "Enabled": true
-	 },
-	 {
-	   "Name": "RapyutaSimulationPlugins",
-	   "Enabled": true
 	 }
    ]
 }
