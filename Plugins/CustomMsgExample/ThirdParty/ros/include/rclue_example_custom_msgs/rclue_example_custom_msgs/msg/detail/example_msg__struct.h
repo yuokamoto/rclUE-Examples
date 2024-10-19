@@ -22,6 +22,8 @@ extern "C"
 #include "rosidl_runtime_c/string.h"
 // Member 'vector_field'
 #include "geometry_msgs/msg/detail/vector3__struct.h"
+// Member 'hitresult_field'
+#include "ue_msgs/msg/detail/hit_result__struct.h"
 // Member 'int_array_field'
 // Member 'float_array_field'
 #include "rosidl_runtime_c/primitives_sequence.h"
@@ -33,6 +35,7 @@ typedef struct rclue_example_custom_msgs__msg__ExampleMsg
   int32_t int_field;
   float float_field;
   geometry_msgs__msg__Vector3 vector_field;
+  ue_msgs__msg__HitResult hitresult_field;
   rosidl_runtime_c__int32__Sequence int_array_field;
   rosidl_runtime_c__float__Sequence float_array_field;
 } rclue_example_custom_msgs__msg__ExampleMsg;

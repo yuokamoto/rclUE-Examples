@@ -14,6 +14,7 @@
 #include "rclcUtilities.h"
 
 // Generated Msg/Srv/Action(can be empty)
+#include "Msgs/ROS2HitResult.h"
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
@@ -42,6 +43,9 @@ public:
 	FVector VectorField = FVector::ZeroVector;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	FROSHitResult HitresultField;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TArray<int> IntArrayField;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -64,6 +68,8 @@ public:
 
 		VectorField = UROS2Utils::VectorROSToUE<geometry_msgs__msg__Vector3>(in_ros_data.vector_field);
 
+		HitresultField.SetFromROS2(in_ros_data.hitresult_field);
+
 		UROS2Utils::SequenceROSToUEArray<int, int>(in_ros_data.int_array_field.data, IntArrayField, in_ros_data.int_array_field.size);
 
 		UROS2Utils::SequenceROSToUEArray<float, float>(in_ros_data.float_array_field.data, FloatArrayField, in_ros_data.float_array_field.size);
@@ -80,6 +86,8 @@ public:
 		out_ros_data.float_field = FloatField;
 
 		out_ros_data.vector_field = UROS2Utils::VectorUEToROS<geometry_msgs__msg__Vector3>(VectorField);
+
+		HitresultField.SetROS2(out_ros_data.hitresult_field);
 
 		if (out_ros_data.int_array_field.data) {
 		rosidl_runtime_c__int32__Sequence__fini(&out_ros_data.int_array_field);

@@ -19,6 +19,10 @@
 #include "geometry_msgs/msg/vector3.h"
 // Member `vector_field`
 #include "geometry_msgs/msg/detail/vector3__rosidl_typesupport_introspection_c.h"
+// Member `hitresult_field`
+#include "ue_msgs/msg/hit_result.h"
+// Member `hitresult_field`
+#include "ue_msgs/msg/detail/hit_result__rosidl_typesupport_introspection_c.h"
 // Member `int_array_field`
 // Member `float_array_field`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
@@ -152,7 +156,7 @@ bool rclue_example_custom_msgs__msg__ExampleMsg__rosidl_typesupport_introspectio
   return rosidl_runtime_c__float__Sequence__init(member, size);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember rclue_example_custom_msgs__msg__ExampleMsg__rosidl_typesupport_introspection_c__ExampleMsg_message_member_array[6] = {
+static rosidl_typesupport_introspection_c__MessageMember rclue_example_custom_msgs__msg__ExampleMsg__rosidl_typesupport_introspection_c__ExampleMsg_message_member_array[7] = {
   {
     "str_field",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
@@ -222,6 +226,23 @@ static rosidl_typesupport_introspection_c__MessageMember rclue_example_custom_ms
     NULL  // resize(index) function pointer
   },
   {
+    "hitresult_field",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message (initialized later)
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(rclue_example_custom_msgs__msg__ExampleMsg, hitresult_field),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
+  {
     "int_array_field",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
     0,  // upper bound of string
@@ -260,7 +281,7 @@ static rosidl_typesupport_introspection_c__MessageMember rclue_example_custom_ms
 static const rosidl_typesupport_introspection_c__MessageMembers rclue_example_custom_msgs__msg__ExampleMsg__rosidl_typesupport_introspection_c__ExampleMsg_message_members = {
   "rclue_example_custom_msgs__msg",  // message namespace
   "ExampleMsg",  // message name
-  6,  // number of fields
+  7,  // number of fields
   sizeof(rclue_example_custom_msgs__msg__ExampleMsg),
   rclue_example_custom_msgs__msg__ExampleMsg__rosidl_typesupport_introspection_c__ExampleMsg_message_member_array,  // message members
   rclue_example_custom_msgs__msg__ExampleMsg__rosidl_typesupport_introspection_c__ExampleMsg_init_function,  // function to initialize message memory (memory has to be allocated)
@@ -280,6 +301,8 @@ const rosidl_message_type_support_t *
 ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, rclue_example_custom_msgs, msg, ExampleMsg)() {
   rclue_example_custom_msgs__msg__ExampleMsg__rosidl_typesupport_introspection_c__ExampleMsg_message_member_array[3].members_ =
     ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, geometry_msgs, msg, Vector3)();
+  rclue_example_custom_msgs__msg__ExampleMsg__rosidl_typesupport_introspection_c__ExampleMsg_message_member_array[4].members_ =
+    ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, ue_msgs, msg, HitResult)();
   if (!rclue_example_custom_msgs__msg__ExampleMsg__rosidl_typesupport_introspection_c__ExampleMsg_message_type_support_handle.typesupport_identifier) {
     rclue_example_custom_msgs__msg__ExampleMsg__rosidl_typesupport_introspection_c__ExampleMsg_message_type_support_handle.typesupport_identifier =
       rosidl_typesupport_introspection_c__identifier;

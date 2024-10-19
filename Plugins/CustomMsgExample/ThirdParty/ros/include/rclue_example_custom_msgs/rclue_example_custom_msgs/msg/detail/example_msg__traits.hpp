@@ -17,6 +17,8 @@
 // Include directives for member types
 // Member 'vector_field'
 #include "geometry_msgs/msg/detail/vector3__traits.hpp"
+// Member 'hitresult_field'
+#include "ue_msgs/msg/detail/hit_result__traits.hpp"
 
 namespace rclue_example_custom_msgs
 {
@@ -54,6 +56,13 @@ inline void to_flow_style_yaml(
   {
     out << "vector_field: ";
     to_flow_style_yaml(msg.vector_field, out);
+    out << ", ";
+  }
+
+  // member: hitresult_field
+  {
+    out << "hitresult_field: ";
+    to_flow_style_yaml(msg.hitresult_field, out);
     out << ", ";
   }
 
@@ -135,6 +144,15 @@ inline void to_block_style_yaml(
     }
     out << "vector_field:\n";
     to_block_style_yaml(msg.vector_field, out, indentation + 2);
+  }
+
+  // member: hitresult_field
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "hitresult_field:\n";
+    to_block_style_yaml(msg.hitresult_field, out, indentation + 2);
   }
 
   // member: int_array_field

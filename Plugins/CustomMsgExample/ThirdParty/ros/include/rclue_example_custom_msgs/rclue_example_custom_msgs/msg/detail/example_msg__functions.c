@@ -16,6 +16,8 @@
 #include "rosidl_runtime_c/string_functions.h"
 // Member `vector_field`
 #include "geometry_msgs/msg/detail/vector3__functions.h"
+// Member `hitresult_field`
+#include "ue_msgs/msg/detail/hit_result__functions.h"
 // Member `int_array_field`
 // Member `float_array_field`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
@@ -35,6 +37,11 @@ rclue_example_custom_msgs__msg__ExampleMsg__init(rclue_example_custom_msgs__msg_
   // float_field
   // vector_field
   if (!geometry_msgs__msg__Vector3__init(&msg->vector_field)) {
+    rclue_example_custom_msgs__msg__ExampleMsg__fini(msg);
+    return false;
+  }
+  // hitresult_field
+  if (!ue_msgs__msg__HitResult__init(&msg->hitresult_field)) {
     rclue_example_custom_msgs__msg__ExampleMsg__fini(msg);
     return false;
   }
@@ -63,6 +70,8 @@ rclue_example_custom_msgs__msg__ExampleMsg__fini(rclue_example_custom_msgs__msg_
   // float_field
   // vector_field
   geometry_msgs__msg__Vector3__fini(&msg->vector_field);
+  // hitresult_field
+  ue_msgs__msg__HitResult__fini(&msg->hitresult_field);
   // int_array_field
   rosidl_runtime_c__int32__Sequence__fini(&msg->int_array_field);
   // float_array_field
@@ -92,6 +101,12 @@ rclue_example_custom_msgs__msg__ExampleMsg__are_equal(const rclue_example_custom
   // vector_field
   if (!geometry_msgs__msg__Vector3__are_equal(
       &(lhs->vector_field), &(rhs->vector_field)))
+  {
+    return false;
+  }
+  // hitresult_field
+  if (!ue_msgs__msg__HitResult__are_equal(
+      &(lhs->hitresult_field), &(rhs->hitresult_field)))
   {
     return false;
   }
@@ -131,6 +146,12 @@ rclue_example_custom_msgs__msg__ExampleMsg__copy(
   // vector_field
   if (!geometry_msgs__msg__Vector3__copy(
       &(input->vector_field), &(output->vector_field)))
+  {
+    return false;
+  }
+  // hitresult_field
+  if (!ue_msgs__msg__HitResult__copy(
+      &(input->hitresult_field), &(output->hitresult_field)))
   {
     return false;
   }

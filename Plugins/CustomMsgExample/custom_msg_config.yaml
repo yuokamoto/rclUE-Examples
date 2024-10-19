@@ -31,7 +31,7 @@ dependency:
   # nav_msgs: ''
   # geographic_msgs: ''
   # unique_identifier_msgs: ''
-  # ue_msgs: ''
+  ue_msgs: ''
 
 ## additional dependency
 ## this dict is appended on dependency. 

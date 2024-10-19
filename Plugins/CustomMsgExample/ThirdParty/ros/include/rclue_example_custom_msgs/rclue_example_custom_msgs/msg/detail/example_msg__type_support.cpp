@@ -127,7 +127,7 @@ void resize_function__ExampleMsg__float_array_field(void * untyped_member, size_
   member->resize(size);
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember ExampleMsg_message_member_array[6] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember ExampleMsg_message_member_array[7] = {
   {
     "str_field",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
@@ -197,6 +197,23 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ExampleMsg_me
     nullptr  // resize(index) function pointer
   },
   {
+    "hitresult_field",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_MESSAGE,  // type
+    0,  // upper bound of string
+    ::rosidl_typesupport_introspection_cpp::get_message_type_support_handle<ue_msgs::msg::HitResult>(),  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(rclue_example_custom_msgs::msg::ExampleMsg, hitresult_field),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
+  {
     "int_array_field",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
     0,  // upper bound of string
@@ -235,7 +252,7 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember ExampleMsg_me
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers ExampleMsg_message_members = {
   "rclue_example_custom_msgs::msg",  // message namespace
   "ExampleMsg",  // message name
-  6,  // number of fields
+  7,  // number of fields
   sizeof(rclue_example_custom_msgs::msg::ExampleMsg),
   ExampleMsg_message_member_array,  // message members
   ExampleMsg_init_function,  // function to initialize message memory (memory has to be allocated)

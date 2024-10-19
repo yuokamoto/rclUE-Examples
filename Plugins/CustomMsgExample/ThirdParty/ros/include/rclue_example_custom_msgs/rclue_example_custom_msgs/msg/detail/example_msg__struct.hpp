@@ -18,6 +18,8 @@
 // Include directives for member types
 // Member 'vector_field'
 #include "geometry_msgs/msg/detail/vector3__struct.hpp"
+// Member 'hitresult_field'
+#include "ue_msgs/msg/detail/hit_result__struct.hpp"
 
 #ifndef _WIN32
 # define DEPRECATED__rclue_example_custom_msgs__msg__ExampleMsg __attribute__((deprecated))
@@ -38,7 +40,8 @@ struct ExampleMsg_
   using Type = ExampleMsg_<ContainerAllocator>;
 
   explicit ExampleMsg_(rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
-  : vector_field(_init)
+  : vector_field(_init),
+    hitresult_field(_init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -51,7 +54,8 @@ struct ExampleMsg_
 
   explicit ExampleMsg_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
   : str_field(_alloc),
-    vector_field(_alloc, _init)
+    vector_field(_alloc, _init),
+    hitresult_field(_alloc, _init)
   {
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
@@ -75,6 +79,9 @@ struct ExampleMsg_
   using _vector_field_type =
     geometry_msgs::msg::Vector3_<ContainerAllocator>;
   _vector_field_type vector_field;
+  using _hitresult_field_type =
+    ue_msgs::msg::HitResult_<ContainerAllocator>;
+  _hitresult_field_type hitresult_field;
   using _int_array_field_type =
     std::vector<int32_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<int32_t>>;
   _int_array_field_type int_array_field;
@@ -105,6 +112,12 @@ struct ExampleMsg_
     const geometry_msgs::msg::Vector3_<ContainerAllocator> & _arg)
   {
     this->vector_field = _arg;
+    return *this;
+  }
+  Type & set__hitresult_field(
+    const ue_msgs::msg::HitResult_<ContainerAllocator> & _arg)
+  {
+    this->hitresult_field = _arg;
     return *this;
   }
   Type & set__int_array_field(
@@ -172,6 +185,9 @@ struct ExampleMsg_
       return false;
     }
     if (this->vector_field != other.vector_field) {
+      return false;
+    }
+    if (this->hitresult_field != other.hitresult_field) {
       return false;
     }
     if (this->int_array_field != other.int_array_field) {

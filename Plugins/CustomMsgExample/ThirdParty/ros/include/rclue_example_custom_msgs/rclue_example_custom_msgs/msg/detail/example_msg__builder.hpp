@@ -53,16 +53,32 @@ private:
   ::rclue_example_custom_msgs::msg::ExampleMsg msg_;
 };
 
+class Init_ExampleMsg_hitresult_field
+{
+public:
+  explicit Init_ExampleMsg_hitresult_field(::rclue_example_custom_msgs::msg::ExampleMsg & msg)
+  : msg_(msg)
+  {}
+  Init_ExampleMsg_int_array_field hitresult_field(::rclue_example_custom_msgs::msg::ExampleMsg::_hitresult_field_type arg)
+  {
+    msg_.hitresult_field = std::move(arg);
+    return Init_ExampleMsg_int_array_field(msg_);
+  }
+
+private:
+  ::rclue_example_custom_msgs::msg::ExampleMsg msg_;
+};
+
 class Init_ExampleMsg_vector_field
 {
 public:
   explicit Init_ExampleMsg_vector_field(::rclue_example_custom_msgs::msg::ExampleMsg & msg)
   : msg_(msg)
   {}
-  Init_ExampleMsg_int_array_field vector_field(::rclue_example_custom_msgs::msg::ExampleMsg::_vector_field_type arg)
+  Init_ExampleMsg_hitresult_field vector_field(::rclue_example_custom_msgs::msg::ExampleMsg::_vector_field_type arg)
   {
     msg_.vector_field = std::move(arg);
-    return Init_ExampleMsg_int_array_field(msg_);
+    return Init_ExampleMsg_hitresult_field(msg_);
   }
 
 private:
