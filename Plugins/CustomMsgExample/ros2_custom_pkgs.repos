@@ -1,0 +1,11 @@
+repositories:
+  rclUE_client_example:
+    type: git
+    url: https://github.com/yuokamoto/rclUE_client_example.git
+    version: custom_msgs
+
+# Please add target msg repo/dependency msg repo
+#  navigation2: # non buildin and ue msg dependency
+#   type: git
+#    url: https://github.com/ros-planning/navigation2.git
+#    version: humble
