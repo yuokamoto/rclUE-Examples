@@ -1,7 +1,7 @@
 // generated from rosidl_generator_c/resource/idl__functions.c.em
-// with input from rclue_example_custom_msgs:msg/ExampleMsg.idl
+// with input from rclue_example_custom_msgs:msg/CustomMsgExample.idl
 // generated code does not contain a copyright notice
-#include "rclue_example_custom_msgs/msg/detail/example_msg__functions.h"
+#include "rclue_example_custom_msgs/msg/detail/custom_msg_example__functions.h"
 
 #include <assert.h>
 #include <stdbool.h>
@@ -16,50 +16,50 @@
 #include "rosidl_runtime_c/string_functions.h"
 // Member `vector_field`
 #include "geometry_msgs/msg/detail/vector3__functions.h"
-// Member `hitresult_field`
-#include "ue_msgs/msg/detail/hit_result__functions.h"
+// Member `entitystate_field`
+#include "ue_msgs/msg/detail/entity_state__functions.h"
 // Member `int_array_field`
 // Member `float_array_field`
 #include "rosidl_runtime_c/primitives_sequence_functions.h"
 
 bool
-rclue_example_custom_msgs__msg__ExampleMsg__init(rclue_example_custom_msgs__msg__ExampleMsg * msg)
+rclue_example_custom_msgs__msg__CustomMsgExample__init(rclue_example_custom_msgs__msg__CustomMsgExample * msg)
 {
   if (!msg) {
     return false;
   }
   // str_field
   if (!rosidl_runtime_c__String__init(&msg->str_field)) {
-    rclue_example_custom_msgs__msg__ExampleMsg__fini(msg);
+    rclue_example_custom_msgs__msg__CustomMsgExample__fini(msg);
     return false;
   }
   // int_field
   // float_field
   // vector_field
   if (!geometry_msgs__msg__Vector3__init(&msg->vector_field)) {
-    rclue_example_custom_msgs__msg__ExampleMsg__fini(msg);
+    rclue_example_custom_msgs__msg__CustomMsgExample__fini(msg);
     return false;
   }
-  // hitresult_field
-  if (!ue_msgs__msg__HitResult__init(&msg->hitresult_field)) {
-    rclue_example_custom_msgs__msg__ExampleMsg__fini(msg);
+  // entitystate_field
+  if (!ue_msgs__msg__EntityState__init(&msg->entitystate_field)) {
+    rclue_example_custom_msgs__msg__CustomMsgExample__fini(msg);
     return false;
   }
   // int_array_field
   if (!rosidl_runtime_c__int32__Sequence__init(&msg->int_array_field, 0)) {
-    rclue_example_custom_msgs__msg__ExampleMsg__fini(msg);
+    rclue_example_custom_msgs__msg__CustomMsgExample__fini(msg);
     return false;
   }
   // float_array_field
   if (!rosidl_runtime_c__float__Sequence__init(&msg->float_array_field, 0)) {
-    rclue_example_custom_msgs__msg__ExampleMsg__fini(msg);
+    rclue_example_custom_msgs__msg__CustomMsgExample__fini(msg);
     return false;
   }
   return true;
 }
 
 void
-rclue_example_custom_msgs__msg__ExampleMsg__fini(rclue_example_custom_msgs__msg__ExampleMsg * msg)
+rclue_example_custom_msgs__msg__CustomMsgExample__fini(rclue_example_custom_msgs__msg__CustomMsgExample * msg)
 {
   if (!msg) {
     return;
@@ -70,8 +70,8 @@ rclue_example_custom_msgs__msg__ExampleMsg__fini(rclue_example_custom_msgs__msg_
   // float_field
   // vector_field
   geometry_msgs__msg__Vector3__fini(&msg->vector_field);
-  // hitresult_field
-  ue_msgs__msg__HitResult__fini(&msg->hitresult_field);
+  // entitystate_field
+  ue_msgs__msg__EntityState__fini(&msg->entitystate_field);
   // int_array_field
   rosidl_runtime_c__int32__Sequence__fini(&msg->int_array_field);
   // float_array_field
@@ -79,7 +79,7 @@ rclue_example_custom_msgs__msg__ExampleMsg__fini(rclue_example_custom_msgs__msg_
 }
 
 bool
-rclue_example_custom_msgs__msg__ExampleMsg__are_equal(const rclue_example_custom_msgs__msg__ExampleMsg * lhs, const rclue_example_custom_msgs__msg__ExampleMsg * rhs)
+rclue_example_custom_msgs__msg__CustomMsgExample__are_equal(const rclue_example_custom_msgs__msg__CustomMsgExample * lhs, const rclue_example_custom_msgs__msg__CustomMsgExample * rhs)
 {
   if (!lhs || !rhs) {
     return false;
@@ -104,9 +104,9 @@ rclue_example_custom_msgs__msg__ExampleMsg__are_equal(const rclue_example_custom
   {
     return false;
   }
-  // hitresult_field
-  if (!ue_msgs__msg__HitResult__are_equal(
-      &(lhs->hitresult_field), &(rhs->hitresult_field)))
+  // entitystate_field
+  if (!ue_msgs__msg__EntityState__are_equal(
+      &(lhs->entitystate_field), &(rhs->entitystate_field)))
   {
     return false;
   }
@@ -126,9 +126,9 @@ rclue_example_custom_msgs__msg__ExampleMsg__are_equal(const rclue_example_custom
 }
 
 bool
-rclue_example_custom_msgs__msg__ExampleMsg__copy(
-  const rclue_example_custom_msgs__msg__ExampleMsg * input,
-  rclue_example_custom_msgs__msg__ExampleMsg * output)
+rclue_example_custom_msgs__msg__CustomMsgExample__copy(
+  const rclue_example_custom_msgs__msg__CustomMsgExample * input,
+  rclue_example_custom_msgs__msg__CustomMsgExample * output)
 {
   if (!input || !output) {
     return false;
@@ -149,9 +149,9 @@ rclue_example_custom_msgs__msg__ExampleMsg__copy(
   {
     return false;
   }
-  // hitresult_field
-  if (!ue_msgs__msg__HitResult__copy(
-      &(input->hitresult_field), &(output->hitresult_field)))
+  // entitystate_field
+  if (!ue_msgs__msg__EntityState__copy(
+      &(input->entitystate_field), &(output->entitystate_field)))
   {
     return false;
   }
@@ -170,16 +170,16 @@ rclue_example_custom_msgs__msg__ExampleMsg__copy(
   return true;
 }
 
-rclue_example_custom_msgs__msg__ExampleMsg *
-rclue_example_custom_msgs__msg__ExampleMsg__create()
+rclue_example_custom_msgs__msg__CustomMsgExample *
+rclue_example_custom_msgs__msg__CustomMsgExample__create()
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  rclue_example_custom_msgs__msg__ExampleMsg * msg = (rclue_example_custom_msgs__msg__ExampleMsg *)allocator.allocate(sizeof(rclue_example_custom_msgs__msg__ExampleMsg), allocator.state);
+  rclue_example_custom_msgs__msg__CustomMsgExample * msg = (rclue_example_custom_msgs__msg__CustomMsgExample *)allocator.allocate(sizeof(rclue_example_custom_msgs__msg__CustomMsgExample), allocator.state);
   if (!msg) {
     return NULL;
   }
-  memset(msg, 0, sizeof(rclue_example_custom_msgs__msg__ExampleMsg));
-  bool success = rclue_example_custom_msgs__msg__ExampleMsg__init(msg);
+  memset(msg, 0, sizeof(rclue_example_custom_msgs__msg__CustomMsgExample));
+  bool success = rclue_example_custom_msgs__msg__CustomMsgExample__init(msg);
   if (!success) {
     allocator.deallocate(msg, allocator.state);
     return NULL;
@@ -188,34 +188,34 @@ rclue_example_custom_msgs__msg__ExampleMsg__create()
 }
 
 void
-rclue_example_custom_msgs__msg__ExampleMsg__destroy(rclue_example_custom_msgs__msg__ExampleMsg * msg)
+rclue_example_custom_msgs__msg__CustomMsgExample__destroy(rclue_example_custom_msgs__msg__CustomMsgExample * msg)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
-    rclue_example_custom_msgs__msg__ExampleMsg__fini(msg);
+    rclue_example_custom_msgs__msg__CustomMsgExample__fini(msg);
   }
   allocator.deallocate(msg, allocator.state);
 }
 
 
 bool
-rclue_example_custom_msgs__msg__ExampleMsg__Sequence__init(rclue_example_custom_msgs__msg__ExampleMsg__Sequence * array, size_t size)
+rclue_example_custom_msgs__msg__CustomMsgExample__Sequence__init(rclue_example_custom_msgs__msg__CustomMsgExample__Sequence * array, size_t size)
 {
   if (!array) {
     return false;
   }
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  rclue_example_custom_msgs__msg__ExampleMsg * data = NULL;
+  rclue_example_custom_msgs__msg__CustomMsgExample * data = NULL;
 
   if (size) {
-    data = (rclue_example_custom_msgs__msg__ExampleMsg *)allocator.zero_allocate(size, sizeof(rclue_example_custom_msgs__msg__ExampleMsg), allocator.state);
+    data = (rclue_example_custom_msgs__msg__CustomMsgExample *)allocator.zero_allocate(size, sizeof(rclue_example_custom_msgs__msg__CustomMsgExample), allocator.state);
     if (!data) {
       return false;
     }
     // initialize all array elements
     size_t i;
     for (i = 0; i < size; ++i) {
-      bool success = rclue_example_custom_msgs__msg__ExampleMsg__init(&data[i]);
+      bool success = rclue_example_custom_msgs__msg__CustomMsgExample__init(&data[i]);
       if (!success) {
         break;
       }
@@ -223,7 +223,7 @@ rclue_example_custom_msgs__msg__ExampleMsg__Sequence__init(rclue_example_custom_
     if (i < size) {
       // if initialization failed finalize the already initialized array elements
       for (; i > 0; --i) {
-        rclue_example_custom_msgs__msg__ExampleMsg__fini(&data[i - 1]);
+        rclue_example_custom_msgs__msg__CustomMsgExample__fini(&data[i - 1]);
       }
       allocator.deallocate(data, allocator.state);
       return false;
@@ -236,7 +236,7 @@ rclue_example_custom_msgs__msg__ExampleMsg__Sequence__init(rclue_example_custom_
 }
 
 void
-rclue_example_custom_msgs__msg__ExampleMsg__Sequence__fini(rclue_example_custom_msgs__msg__ExampleMsg__Sequence * array)
+rclue_example_custom_msgs__msg__CustomMsgExample__Sequence__fini(rclue_example_custom_msgs__msg__CustomMsgExample__Sequence * array)
 {
   if (!array) {
     return;
@@ -248,7 +248,7 @@ rclue_example_custom_msgs__msg__ExampleMsg__Sequence__fini(rclue_example_custom_
     assert(array->capacity > 0);
     // finalize all array elements
     for (size_t i = 0; i < array->capacity; ++i) {
-      rclue_example_custom_msgs__msg__ExampleMsg__fini(&array->data[i]);
+      rclue_example_custom_msgs__msg__CustomMsgExample__fini(&array->data[i]);
     }
     allocator.deallocate(array->data, allocator.state);
     array->data = NULL;
@@ -261,15 +261,15 @@ rclue_example_custom_msgs__msg__ExampleMsg__Sequence__fini(rclue_example_custom_
   }
 }
 
-rclue_example_custom_msgs__msg__ExampleMsg__Sequence *
-rclue_example_custom_msgs__msg__ExampleMsg__Sequence__create(size_t size)
+rclue_example_custom_msgs__msg__CustomMsgExample__Sequence *
+rclue_example_custom_msgs__msg__CustomMsgExample__Sequence__create(size_t size)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  rclue_example_custom_msgs__msg__ExampleMsg__Sequence * array = (rclue_example_custom_msgs__msg__ExampleMsg__Sequence *)allocator.allocate(sizeof(rclue_example_custom_msgs__msg__ExampleMsg__Sequence), allocator.state);
+  rclue_example_custom_msgs__msg__CustomMsgExample__Sequence * array = (rclue_example_custom_msgs__msg__CustomMsgExample__Sequence *)allocator.allocate(sizeof(rclue_example_custom_msgs__msg__CustomMsgExample__Sequence), allocator.state);
   if (!array) {
     return NULL;
   }
-  bool success = rclue_example_custom_msgs__msg__ExampleMsg__Sequence__init(array, size);
+  bool success = rclue_example_custom_msgs__msg__CustomMsgExample__Sequence__init(array, size);
   if (!success) {
     allocator.deallocate(array, allocator.state);
     return NULL;
@@ -278,17 +278,17 @@ rclue_example_custom_msgs__msg__ExampleMsg__Sequence__create(size_t size)
 }
 
 void
-rclue_example_custom_msgs__msg__ExampleMsg__Sequence__destroy(rclue_example_custom_msgs__msg__ExampleMsg__Sequence * array)
+rclue_example_custom_msgs__msg__CustomMsgExample__Sequence__destroy(rclue_example_custom_msgs__msg__CustomMsgExample__Sequence * array)
 {
   rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
-    rclue_example_custom_msgs__msg__ExampleMsg__Sequence__fini(array);
+    rclue_example_custom_msgs__msg__CustomMsgExample__Sequence__fini(array);
   }
   allocator.deallocate(array, allocator.state);
 }
 
 bool
-rclue_example_custom_msgs__msg__ExampleMsg__Sequence__are_equal(const rclue_example_custom_msgs__msg__ExampleMsg__Sequence * lhs, const rclue_example_custom_msgs__msg__ExampleMsg__Sequence * rhs)
+rclue_example_custom_msgs__msg__CustomMsgExample__Sequence__are_equal(const rclue_example_custom_msgs__msg__CustomMsgExample__Sequence * lhs, const rclue_example_custom_msgs__msg__CustomMsgExample__Sequence * rhs)
 {
   if (!lhs || !rhs) {
     return false;
@@ -297,7 +297,7 @@ rclue_example_custom_msgs__msg__ExampleMsg__Sequence__are_equal(const rclue_exam
     return false;
   }
   for (size_t i = 0; i < lhs->size; ++i) {
-    if (!rclue_example_custom_msgs__msg__ExampleMsg__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
+    if (!rclue_example_custom_msgs__msg__CustomMsgExample__are_equal(&(lhs->data[i]), &(rhs->data[i]))) {
       return false;
     }
   }
@@ -305,19 +305,19 @@ rclue_example_custom_msgs__msg__ExampleMsg__Sequence__are_equal(const rclue_exam
 }
 
 bool
-rclue_example_custom_msgs__msg__ExampleMsg__Sequence__copy(
-  const rclue_example_custom_msgs__msg__ExampleMsg__Sequence * input,
-  rclue_example_custom_msgs__msg__ExampleMsg__Sequence * output)
+rclue_example_custom_msgs__msg__CustomMsgExample__Sequence__copy(
+  const rclue_example_custom_msgs__msg__CustomMsgExample__Sequence * input,
+  rclue_example_custom_msgs__msg__CustomMsgExample__Sequence * output)
 {
   if (!input || !output) {
     return false;
   }
   if (output->capacity < input->size) {
     const size_t allocation_size =
-      input->size * sizeof(rclue_example_custom_msgs__msg__ExampleMsg);
+      input->size * sizeof(rclue_example_custom_msgs__msg__CustomMsgExample);
     rcutils_allocator_t allocator = rcutils_get_default_allocator();
-    rclue_example_custom_msgs__msg__ExampleMsg * data =
-      (rclue_example_custom_msgs__msg__ExampleMsg *)allocator.reallocate(
+    rclue_example_custom_msgs__msg__CustomMsgExample * data =
+      (rclue_example_custom_msgs__msg__CustomMsgExample *)allocator.reallocate(
       output->data, allocation_size, allocator.state);
     if (!data) {
       return false;
@@ -326,12 +326,12 @@ rclue_example_custom_msgs__msg__ExampleMsg__Sequence__copy(
     // to fulfill the allocation request, invalidating output->data.
     output->data = data;
     for (size_t i = output->capacity; i < input->size; ++i) {
-      if (!rclue_example_custom_msgs__msg__ExampleMsg__init(&output->data[i])) {
+      if (!rclue_example_custom_msgs__msg__CustomMsgExample__init(&output->data[i])) {
         // If initialization of any new item fails, roll back
         // all previously initialized items. Existing items
         // in output are to be left unmodified.
         for (; i-- > output->capacity; ) {
-          rclue_example_custom_msgs__msg__ExampleMsg__fini(&output->data[i]);
+          rclue_example_custom_msgs__msg__CustomMsgExample__fini(&output->data[i]);
         }
         return false;
       }
@@ -340,7 +340,7 @@ rclue_example_custom_msgs__msg__ExampleMsg__Sequence__copy(
   }
   output->size = input->size;
   for (size_t i = 0; i < input->size; ++i) {
-    if (!rclue_example_custom_msgs__msg__ExampleMsg__copy(
+    if (!rclue_example_custom_msgs__msg__CustomMsgExample__copy(
         &(input->data[i]), &(output->data[i])))
     {
       return false;

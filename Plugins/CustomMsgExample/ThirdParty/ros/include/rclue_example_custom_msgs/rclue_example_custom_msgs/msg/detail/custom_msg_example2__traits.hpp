@@ -1,9 +1,9 @@
 // generated from rosidl_generator_cpp/resource/idl__traits.hpp.em
-// with input from rclue_example_custom_msgs:msg/ExampleMsg2.idl
+// with input from rclue_example_custom_msgs:msg/CustomMsgExample2.idl
 // generated code does not contain a copyright notice
 
-#ifndef RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__EXAMPLE_MSG2__TRAITS_HPP_
-#define RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__EXAMPLE_MSG2__TRAITS_HPP_
+#ifndef RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__CUSTOM_MSG_EXAMPLE2__TRAITS_HPP_
+#define RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__CUSTOM_MSG_EXAMPLE2__TRAITS_HPP_
 
 #include <stdint.h>
 
@@ -11,12 +11,12 @@
 #include <string>
 #include <type_traits>
 
-#include "rclue_example_custom_msgs/msg/detail/example_msg2__struct.hpp"
+#include "rclue_example_custom_msgs/msg/detail/custom_msg_example2__struct.hpp"
 #include "rosidl_runtime_cpp/traits.hpp"
 
 // Include directives for member types
 // Member 'example_msg'
-#include "rclue_example_custom_msgs/msg/detail/example_msg__traits.hpp"
+#include "rclue_example_custom_msgs/msg/detail/custom_msg_example__traits.hpp"
 
 namespace rclue_example_custom_msgs
 {
@@ -25,14 +25,14 @@ namespace msg
 {
 
 inline void to_flow_style_yaml(
-  const ExampleMsg2 & msg,
+  const CustomMsgExample2 & msg,
   std::ostream & out)
 {
   out << "{";
-  // member: str_field
+  // member: str_field2
   {
-    out << "str_field: ";
-    rosidl_generator_traits::value_to_yaml(msg.str_field, out);
+    out << "str_field2: ";
+    rosidl_generator_traits::value_to_yaml(msg.str_field2, out);
     out << ", ";
   }
 
@@ -59,16 +59,16 @@ inline void to_flow_style_yaml(
 }  // NOLINT(readability/fn_size)
 
 inline void to_block_style_yaml(
-  const ExampleMsg2 & msg,
+  const CustomMsgExample2 & msg,
   std::ostream & out, size_t indentation = 0)
 {
-  // member: str_field
+  // member: str_field2
   {
     if (indentation > 0) {
       out << std::string(indentation, ' ');
     }
-    out << "str_field: ";
-    rosidl_generator_traits::value_to_yaml(msg.str_field, out);
+    out << "str_field2: ";
+    rosidl_generator_traits::value_to_yaml(msg.str_field2, out);
     out << "\n";
   }
 
@@ -102,7 +102,7 @@ inline void to_block_style_yaml(
   }
 }  // NOLINT(readability/fn_size)
 
-inline std::string to_yaml(const ExampleMsg2 & msg, bool use_flow_style = false)
+inline std::string to_yaml(const CustomMsgExample2 & msg, bool use_flow_style = false)
 {
   std::ostringstream out;
   if (use_flow_style) {
@@ -122,42 +122,42 @@ namespace rosidl_generator_traits
 
 [[deprecated("use rclue_example_custom_msgs::msg::to_block_style_yaml() instead")]]
 inline void to_yaml(
-  const rclue_example_custom_msgs::msg::ExampleMsg2 & msg,
+  const rclue_example_custom_msgs::msg::CustomMsgExample2 & msg,
   std::ostream & out, size_t indentation = 0)
 {
   rclue_example_custom_msgs::msg::to_block_style_yaml(msg, out, indentation);
 }
 
 [[deprecated("use rclue_example_custom_msgs::msg::to_yaml() instead")]]
-inline std::string to_yaml(const rclue_example_custom_msgs::msg::ExampleMsg2 & msg)
+inline std::string to_yaml(const rclue_example_custom_msgs::msg::CustomMsgExample2 & msg)
 {
   return rclue_example_custom_msgs::msg::to_yaml(msg);
 }
 
 template<>
-inline const char * data_type<rclue_example_custom_msgs::msg::ExampleMsg2>()
+inline const char * data_type<rclue_example_custom_msgs::msg::CustomMsgExample2>()
 {
-  return "rclue_example_custom_msgs::msg::ExampleMsg2";
+  return "rclue_example_custom_msgs::msg::CustomMsgExample2";
 }
 
 template<>
-inline const char * name<rclue_example_custom_msgs::msg::ExampleMsg2>()
+inline const char * name<rclue_example_custom_msgs::msg::CustomMsgExample2>()
 {
-  return "rclue_example_custom_msgs/msg/ExampleMsg2";
+  return "rclue_example_custom_msgs/msg/CustomMsgExample2";
 }
 
 template<>
-struct has_fixed_size<rclue_example_custom_msgs::msg::ExampleMsg2>
+struct has_fixed_size<rclue_example_custom_msgs::msg::CustomMsgExample2>
   : std::integral_constant<bool, false> {};
 
 template<>
-struct has_bounded_size<rclue_example_custom_msgs::msg::ExampleMsg2>
+struct has_bounded_size<rclue_example_custom_msgs::msg::CustomMsgExample2>
   : std::integral_constant<bool, false> {};
 
 template<>
-struct is_message<rclue_example_custom_msgs::msg::ExampleMsg2>
+struct is_message<rclue_example_custom_msgs::msg::CustomMsgExample2>
   : std::true_type {};
 
 }  // namespace rosidl_generator_traits
 
-#endif  // RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__EXAMPLE_MSG2__TRAITS_HPP_
+#endif  // RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__CUSTOM_MSG_EXAMPLE2__TRAITS_HPP_

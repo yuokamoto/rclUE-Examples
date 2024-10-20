@@ -1,9 +1,9 @@
 // generated from rosidl_typesupport_introspection_c/resource/idl__rosidl_typesupport_introspection_c.h.em
-// with input from rclue_example_custom_msgs:msg/ExampleMsg.idl
+// with input from rclue_example_custom_msgs:msg/CustomMsgExample.idl
 // generated code does not contain a copyright notice
 
-#ifndef RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__EXAMPLE_MSG__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
-#define RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__EXAMPLE_MSG__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
+#ifndef RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__CUSTOM_MSG_EXAMPLE__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
+#define RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__CUSTOM_MSG_EXAMPLE__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
 
 #ifdef __cplusplus
 extern "C"
@@ -17,10 +17,10 @@ extern "C"
 
 ROSIDL_TYPESUPPORT_INTROSPECTION_C_PUBLIC_rclue_example_custom_msgs
 const rosidl_message_type_support_t *
-ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, rclue_example_custom_msgs, msg, ExampleMsg)();
+ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspection_c, rclue_example_custom_msgs, msg, CustomMsgExample)();
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif  // RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__EXAMPLE_MSG__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_
+#endif  // RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__CUSTOM_MSG_EXAMPLE__ROSIDL_TYPESUPPORT_INTROSPECTION_C_H_

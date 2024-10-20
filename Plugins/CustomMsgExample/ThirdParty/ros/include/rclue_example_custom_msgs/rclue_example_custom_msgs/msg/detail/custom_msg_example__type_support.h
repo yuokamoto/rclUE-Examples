@@ -1,9 +1,9 @@
 // generated from rosidl_generator_c/resource/idl__type_support.h.em
-// with input from rclue_example_custom_msgs:msg/ExampleMsg2.idl
+// with input from rclue_example_custom_msgs:msg/CustomMsgExample.idl
 // generated code does not contain a copyright notice
 
-#ifndef RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__EXAMPLE_MSG2__TYPE_SUPPORT_H_
-#define RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__EXAMPLE_MSG2__TYPE_SUPPORT_H_
+#ifndef RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__CUSTOM_MSG_EXAMPLE__TYPE_SUPPORT_H_
+#define RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__CUSTOM_MSG_EXAMPLE__TYPE_SUPPORT_H_
 
 #include "rosidl_typesupport_interface/macros.h"
 
@@ -23,11 +23,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(
   rosidl_typesupport_c,
   rclue_example_custom_msgs,
   msg,
-  ExampleMsg2
+  CustomMsgExample
 )();
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif  // RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__EXAMPLE_MSG2__TYPE_SUPPORT_H_
+#endif  // RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__CUSTOM_MSG_EXAMPLE__TYPE_SUPPORT_H_

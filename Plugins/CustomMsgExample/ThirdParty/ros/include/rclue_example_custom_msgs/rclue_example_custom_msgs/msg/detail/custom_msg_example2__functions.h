@@ -1,9 +1,9 @@
 // generated from rosidl_generator_c/resource/idl__functions.h.em
-// with input from rclue_example_custom_msgs:msg/ExampleMsg2.idl
+// with input from rclue_example_custom_msgs:msg/CustomMsgExample2.idl
 // generated code does not contain a copyright notice
 
-#ifndef RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__EXAMPLE_MSG2__FUNCTIONS_H_
-#define RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__EXAMPLE_MSG2__FUNCTIONS_H_
+#ifndef RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__CUSTOM_MSG_EXAMPLE2__FUNCTIONS_H_
+#define RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__CUSTOM_MSG_EXAMPLE2__FUNCTIONS_H_
 
 #ifdef __cplusplus
 extern "C"
@@ -16,57 +16,57 @@ extern "C"
 #include "rosidl_runtime_c/visibility_control.h"
 #include "rclue_example_custom_msgs/msg/rosidl_generator_c__visibility_control.h"
 
-#include "rclue_example_custom_msgs/msg/detail/example_msg2__struct.h"
+#include "rclue_example_custom_msgs/msg/detail/custom_msg_example2__struct.h"
 
-/// Initialize msg/ExampleMsg2 message.
+/// Initialize msg/CustomMsgExample2 message.
 /**
  * If the init function is called twice for the same message without
  * calling fini inbetween previously allocated memory will be leaked.
  * \param[in,out] msg The previously allocated message pointer.
  * Fields without a default value will not be initialized by this function.
  * You might want to call memset(msg, 0, sizeof(
- * rclue_example_custom_msgs__msg__ExampleMsg2
+ * rclue_example_custom_msgs__msg__CustomMsgExample2
  * )) before or use
- * rclue_example_custom_msgs__msg__ExampleMsg2__create()
+ * rclue_example_custom_msgs__msg__CustomMsgExample2__create()
  * to allocate and initialize the message.
  * \return true if initialization was successful, otherwise false
  */
 ROSIDL_GENERATOR_C_PUBLIC_rclue_example_custom_msgs
 bool
-rclue_example_custom_msgs__msg__ExampleMsg2__init(rclue_example_custom_msgs__msg__ExampleMsg2 * msg);
+rclue_example_custom_msgs__msg__CustomMsgExample2__init(rclue_example_custom_msgs__msg__CustomMsgExample2 * msg);
 
-/// Finalize msg/ExampleMsg2 message.
+/// Finalize msg/CustomMsgExample2 message.
 /**
  * \param[in,out] msg The allocated message pointer.
  */
 ROSIDL_GENERATOR_C_PUBLIC_rclue_example_custom_msgs
 void
-rclue_example_custom_msgs__msg__ExampleMsg2__fini(rclue_example_custom_msgs__msg__ExampleMsg2 * msg);
+rclue_example_custom_msgs__msg__CustomMsgExample2__fini(rclue_example_custom_msgs__msg__CustomMsgExample2 * msg);
 
-/// Create msg/ExampleMsg2 message.
+/// Create msg/CustomMsgExample2 message.
 /**
  * It allocates the memory for the message, sets the memory to zero, and
  * calls
- * rclue_example_custom_msgs__msg__ExampleMsg2__init().
+ * rclue_example_custom_msgs__msg__CustomMsgExample2__init().
  * \return The pointer to the initialized message if successful,
  * otherwise NULL
  */
 ROSIDL_GENERATOR_C_PUBLIC_rclue_example_custom_msgs
-rclue_example_custom_msgs__msg__ExampleMsg2 *
-rclue_example_custom_msgs__msg__ExampleMsg2__create();
+rclue_example_custom_msgs__msg__CustomMsgExample2 *
+rclue_example_custom_msgs__msg__CustomMsgExample2__create();
 
-/// Destroy msg/ExampleMsg2 message.
+/// Destroy msg/CustomMsgExample2 message.
 /**
  * It calls
- * rclue_example_custom_msgs__msg__ExampleMsg2__fini()
+ * rclue_example_custom_msgs__msg__CustomMsgExample2__fini()
  * and frees the memory of the message.
  * \param[in,out] msg The allocated message pointer.
  */
 ROSIDL_GENERATOR_C_PUBLIC_rclue_example_custom_msgs
 void
-rclue_example_custom_msgs__msg__ExampleMsg2__destroy(rclue_example_custom_msgs__msg__ExampleMsg2 * msg);
+rclue_example_custom_msgs__msg__CustomMsgExample2__destroy(rclue_example_custom_msgs__msg__CustomMsgExample2 * msg);
 
-/// Check for msg/ExampleMsg2 message equality.
+/// Check for msg/CustomMsgExample2 message equality.
 /**
  * \param[in] lhs The message on the left hand size of the equality operator.
  * \param[in] rhs The message on the right hand size of the equality operator.
@@ -74,9 +74,9 @@ rclue_example_custom_msgs__msg__ExampleMsg2__destroy(rclue_example_custom_msgs__
  */
 ROSIDL_GENERATOR_C_PUBLIC_rclue_example_custom_msgs
 bool
-rclue_example_custom_msgs__msg__ExampleMsg2__are_equal(const rclue_example_custom_msgs__msg__ExampleMsg2 * lhs, const rclue_example_custom_msgs__msg__ExampleMsg2 * rhs);
+rclue_example_custom_msgs__msg__CustomMsgExample2__are_equal(const rclue_example_custom_msgs__msg__CustomMsgExample2 * lhs, const rclue_example_custom_msgs__msg__CustomMsgExample2 * rhs);
 
-/// Copy a msg/ExampleMsg2 message.
+/// Copy a msg/CustomMsgExample2 message.
 /**
  * This functions performs a deep copy, as opposed to the shallow copy that
  * plain assignment yields.
@@ -89,14 +89,14 @@ rclue_example_custom_msgs__msg__ExampleMsg2__are_equal(const rclue_example_custo
  */
 ROSIDL_GENERATOR_C_PUBLIC_rclue_example_custom_msgs
 bool
-rclue_example_custom_msgs__msg__ExampleMsg2__copy(
-  const rclue_example_custom_msgs__msg__ExampleMsg2 * input,
-  rclue_example_custom_msgs__msg__ExampleMsg2 * output);
+rclue_example_custom_msgs__msg__CustomMsgExample2__copy(
+  const rclue_example_custom_msgs__msg__CustomMsgExample2 * input,
+  rclue_example_custom_msgs__msg__CustomMsgExample2 * output);
 
-/// Initialize array of msg/ExampleMsg2 messages.
+/// Initialize array of msg/CustomMsgExample2 messages.
 /**
  * It allocates the memory for the number of elements and calls
- * rclue_example_custom_msgs__msg__ExampleMsg2__init()
+ * rclue_example_custom_msgs__msg__CustomMsgExample2__init()
  * for each element of the array.
  * \param[in,out] array The allocated array pointer.
  * \param[in] size The size / capacity of the array.
@@ -106,44 +106,44 @@ rclue_example_custom_msgs__msg__ExampleMsg2__copy(
  */
 ROSIDL_GENERATOR_C_PUBLIC_rclue_example_custom_msgs
 bool
-rclue_example_custom_msgs__msg__ExampleMsg2__Sequence__init(rclue_example_custom_msgs__msg__ExampleMsg2__Sequence * array, size_t size);
+rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence__init(rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence * array, size_t size);
 
-/// Finalize array of msg/ExampleMsg2 messages.
+/// Finalize array of msg/CustomMsgExample2 messages.
 /**
  * It calls
- * rclue_example_custom_msgs__msg__ExampleMsg2__fini()
+ * rclue_example_custom_msgs__msg__CustomMsgExample2__fini()
  * for each element of the array and frees the memory for the number of
  * elements.
  * \param[in,out] array The initialized array pointer.
  */
 ROSIDL_GENERATOR_C_PUBLIC_rclue_example_custom_msgs
 void
-rclue_example_custom_msgs__msg__ExampleMsg2__Sequence__fini(rclue_example_custom_msgs__msg__ExampleMsg2__Sequence * array);
+rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence__fini(rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence * array);
 
-/// Create array of msg/ExampleMsg2 messages.
+/// Create array of msg/CustomMsgExample2 messages.
 /**
  * It allocates the memory for the array and calls
- * rclue_example_custom_msgs__msg__ExampleMsg2__Sequence__init().
+ * rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence__init().
  * \param[in] size The size / capacity of the array.
  * \return The pointer to the initialized array if successful, otherwise NULL
  */
 ROSIDL_GENERATOR_C_PUBLIC_rclue_example_custom_msgs
-rclue_example_custom_msgs__msg__ExampleMsg2__Sequence *
-rclue_example_custom_msgs__msg__ExampleMsg2__Sequence__create(size_t size);
+rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence *
+rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence__create(size_t size);
 
-/// Destroy array of msg/ExampleMsg2 messages.
+/// Destroy array of msg/CustomMsgExample2 messages.
 /**
  * It calls
- * rclue_example_custom_msgs__msg__ExampleMsg2__Sequence__fini()
+ * rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence__fini()
  * on the array,
  * and frees the memory of the array.
  * \param[in,out] array The initialized array pointer.
  */
 ROSIDL_GENERATOR_C_PUBLIC_rclue_example_custom_msgs
 void
-rclue_example_custom_msgs__msg__ExampleMsg2__Sequence__destroy(rclue_example_custom_msgs__msg__ExampleMsg2__Sequence * array);
+rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence__destroy(rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence * array);
 
-/// Check for msg/ExampleMsg2 message array equality.
+/// Check for msg/CustomMsgExample2 message array equality.
 /**
  * \param[in] lhs The message array on the left hand size of the equality operator.
  * \param[in] rhs The message array on the right hand size of the equality operator.
@@ -151,9 +151,9 @@ rclue_example_custom_msgs__msg__ExampleMsg2__Sequence__destroy(rclue_example_cus
  */
 ROSIDL_GENERATOR_C_PUBLIC_rclue_example_custom_msgs
 bool
-rclue_example_custom_msgs__msg__ExampleMsg2__Sequence__are_equal(const rclue_example_custom_msgs__msg__ExampleMsg2__Sequence * lhs, const rclue_example_custom_msgs__msg__ExampleMsg2__Sequence * rhs);
+rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence__are_equal(const rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence * lhs, const rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence * rhs);
 
-/// Copy an array of msg/ExampleMsg2 messages.
+/// Copy an array of msg/CustomMsgExample2 messages.
 /**
  * This functions performs a deep copy, as opposed to the shallow copy that
  * plain assignment yields.
@@ -166,12 +166,12 @@ rclue_example_custom_msgs__msg__ExampleMsg2__Sequence__are_equal(const rclue_exa
  */
 ROSIDL_GENERATOR_C_PUBLIC_rclue_example_custom_msgs
 bool
-rclue_example_custom_msgs__msg__ExampleMsg2__Sequence__copy(
-  const rclue_example_custom_msgs__msg__ExampleMsg2__Sequence * input,
-  rclue_example_custom_msgs__msg__ExampleMsg2__Sequence * output);
+rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence__copy(
+  const rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence * input,
+  rclue_example_custom_msgs__msg__CustomMsgExample2__Sequence * output);
 
 #ifdef __cplusplus
 }
 #endif
 
-#endif  // RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__EXAMPLE_MSG2__FUNCTIONS_H_
+#endif  // RCLUE_EXAMPLE_CUSTOM_MSGS__MSG__DETAIL__CUSTOM_MSG_EXAMPLE2__FUNCTIONS_H_
