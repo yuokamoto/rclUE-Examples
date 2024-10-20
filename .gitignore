@@ -11,7 +11,7 @@
 *.gch
 *.pch
 
-*.so
+# *.so
 *.dylib
 *.dll
 
@@ -21,6 +21,9 @@
 *.la
 *.a
 *.lib
+*.so
+# Whitelist Linux plugin libs
+!Plugins/CustomMsgExample/ThirdParty/**/*.so
 
 *.exe
 *.out
