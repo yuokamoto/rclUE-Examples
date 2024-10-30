@@ -1,0 +1,81 @@
+args: #path is relative from home
+  ue_path: UnrealEngine
+  ue_proj_path: rclUE-Examples 
+  ue_plugin_name: CustomMsgExample 
+  ue_plugin_folder_name: CustomMsgExample
+  ue_target_3rd_name: ros # sub dir name under ThirdParty
+
+
+# additional repos file path. path is relative from home
+repos: rclUE-Examples/Plugins/CustomMsgExample/ros2_custom_pkgs.repos
+
+ignore_deprecated_msg: False # needs to be false to generate deprecated std_msgs
+
+## build and code gen target msgs
+## pkgs and prefix for class
+target_pkgs: 
+  # std_msgs: 'StdMsg'
+  # nav2_msgs: '' # even if it is not target msg, if that is dependency, it should be included here.
+  rclue_example_custom_msgs : ''
+
+## if dependency is "targe", it used same value as target
+## elif dependency is "default", it uses default value defined in script
+# dependency: "target" 
+# dependency: "default"
+dependency:
+  std_msgs: ''
+  # action_msgs: ''
+  builtin_interfaces: ''
+  geometry_msgs: ''
+  # action_msgs: ''
+  # nav_msgs: ''
+  # nav2_msgs: ''
+  # geographic_msgs: ''
+  # unique_identifier_msgs: ''
+  ue_msgs: ''
+
+
+## additional dependency
+## this dict is appended on dependency. 
+## Used to add dependency without overwriting original dependency.
+# dependency_append: ''
+  # your_msg: ''
+
+# Since UE has convention of class naming, we need to map ros msg name to s
+name_mapping:
+  Covariance: 'Cov'
+  Accel: 'Acc'
+  Vector: 'Vec'
+  Quaternion: 'Quat'
+  Trajectory: 'Traj'
+  Transform: 'TF'
+  Compressed: 'Comp'
+  Error: 'Err'
+  Diagnostics: 'Diag'
+  MultiArray: 'MA'
+  Dimension: 'Dim'
+  With: ''
+  Destination: 'Dest'
+  Reservation: 'Reserv'
+  Exception: 'Except'
+  Config: 'Conf'
+  InteractiveMarker: 'IM'
+  Control: 'Ctrl'
+  Request: 'Req'
+  Response: 'Res'
+  Message: 'Msg'
+  String: 'Str'
+  Image: 'Img'
+  Odometry: 'Odom'
+  Hardware: 'HW'
+
+## additional name_mapping
+## this dict is appended on name_mapping. 
+## Used to add name_mapping without overwriting original dependency.
+# name_mapping_append: 
+#   your_mapping_key: 'your_mapping_value'
+
+
+# msgs which is not copied to project.
+# black_list_msgs:
+#   - 'ROS2WStr' # can't handle wstring in UE.
